@@ -1,0 +1,211 @@
+{
+  "paths": {
+    "ULB": "/kaggle/input/datasets/mlg-ulb/creditcardfraud/creditcard.csv",
+    "IBM_MAIN": "/kaggle/input/datasets/ealtman2019/credit-card-transactions/credit_card_transactions-ibm_v2.csv",
+    "IBM_USER0": "/kaggle/input/datasets/ealtman2019/credit-card-transactions/User0_credit_card_transactions.csv",
+    "IBM_CARDS": "/kaggle/input/datasets/ealtman2019/credit-card-transactions/sd254_cards.csv",
+    "IBM_USERS": "/kaggle/input/datasets/ealtman2019/credit-card-transactions/sd254_users.csv"
+  },
+  "row_counts": {
+    "IBM_MAIN": 24386900,
+    "ULB": 284807
+  },
+  "IBM_columns": [
+    "User",
+    "Card",
+    "Year",
+    "Month",
+    "Day",
+    "Time",
+    "Amount",
+    "Use Chip",
+    "Merchant Name",
+    "Merchant City",
+    "Merchant State",
+    "Zip",
+    "MCC",
+    "Errors?",
+    "Is Fraud?"
+  ],
+  "ULB_columns": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount",
+    "Class"
+  ],
+  "IBM_dtypes": {
+    "User": "int64",
+    "Card": "int64",
+    "Year": "int64",
+    "Month": "int64",
+    "Day": "int64",
+    "Time": "object",
+    "Amount": "object",
+    "Use Chip": "object",
+    "Merchant Name": "int64",
+    "Merchant City": "object",
+    "Merchant State": "object",
+    "Zip": "float64",
+    "MCC": "int64",
+    "Errors?": "object",
+    "Is Fraud?": "object"
+  },
+  "ULB_dtypes": {
+    "Time": "int64",
+    "V1": "float64",
+    "V2": "float64",
+    "V3": "float64",
+    "V4": "float64",
+    "V5": "float64",
+    "V6": "float64",
+    "V7": "float64",
+    "V8": "float64",
+    "V9": "float64",
+    "V10": "float64",
+    "V11": "float64",
+    "V12": "float64",
+    "V13": "float64",
+    "V14": "float64",
+    "V15": "float64",
+    "V16": "float64",
+    "V17": "float64",
+    "V18": "float64",
+    "V19": "float64",
+    "V20": "float64",
+    "V21": "float64",
+    "V22": "float64",
+    "V23": "float64",
+    "V24": "float64",
+    "V25": "float64",
+    "V26": "float64",
+    "V27": "float64",
+    "V28": "float64",
+    "Amount": "float64",
+    "Class": "int64"
+  },
+  "IBM_target_candidates": [
+    "Is Fraud?"
+  ],
+  "ULB_target_candidates": [
+    "Class"
+  ],
+  "IBM_entity_candidates": [
+    {
+      "column": "Merchant Name",
+      "dtype": "int64",
+      "unique": 407,
+      "unique_ratio": 0.0407
+    },
+    {
+      "column": "Merchant City",
+      "dtype": "object",
+      "unique": 209,
+      "unique_ratio": 0.0209
+    },
+    {
+      "column": "Merchant State",
+      "dtype": "object",
+      "unique": 37,
+      "unique_ratio": 0.0037
+    },
+    {
+      "column": "Card",
+      "dtype": "int64",
+      "unique": 3,
+      "unique_ratio": 0.0003
+    },
+    {
+      "column": "User",
+      "dtype": "int64",
+      "unique": 1,
+      "unique_ratio": 0.0001
+    }
+  ],
+  "ULB_entity_candidates": [],
+  "IBM_time_candidates": [
+    {
+      "column": "Year",
+      "dtype": "int64",
+      "sample_values": [
+        "2002",
+        "2002",
+        "2002",
+        "2002",
+        "2002"
+      ]
+    },
+    {
+      "column": "Month",
+      "dtype": "int64",
+      "sample_values": [
+        "9",
+        "9",
+        "9",
+        "9",
+        "9"
+      ]
+    },
+    {
+      "column": "Day",
+      "dtype": "int64",
+      "sample_values": [
+        "1",
+        "1",
+        "2",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "column": "Time",
+      "dtype": "object",
+      "sample_values": [
+        "06:21",
+        "06:42",
+        "06:22",
+        "17:45",
+        "06:23"
+      ]
+    }
+  ],
+  "ULB_time_candidates": [
+    {
+      "column": "Time",
+      "dtype": "int64",
+      "sample_values": [
+        "0",
+        "0",
+        "1",
+        "1",
+        "2"
+      ]
+    }
+  ]
+}
